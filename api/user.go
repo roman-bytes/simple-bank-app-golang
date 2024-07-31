@@ -6,6 +6,7 @@ import (
     "github.com/gin-gonic/gin"
     "github.com/lib/pq"
     "github.com/techschool/simplebank/util"
+    "time"
 )
 
 type createUserRequest struct {
