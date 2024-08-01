@@ -7,6 +7,7 @@ import (
     "github.com/lib/pq"
     "github.com/techschool/simplebank/util"
     "time"
+    "database/sql"
 )
 
 type createUserRequest struct {
@@ -25,7 +26,7 @@ type userResponse struct {
 }
 
 func newUserResponse(user db.User) userResponse {
-    return createUserResponse{
+    return userResponse{
                   Username: user.Username,
                   FullName: user.FullName,
                   Email: user.Email,
@@ -105,7 +106,7 @@ func (server *Server) loginUser(ctx *gin.Context) {
     }
 
     accessToken, err := server.tokenMaker.CreateToken(
-        user.Username
+        user.Username,
         server.config.AccessTokenDuration,
     )
     if err != nil {
