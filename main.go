@@ -3,6 +3,7 @@ package main
 import (
     "database/sql"
     "log"
+    "fmt"
 
     "github.com/techschool/simplebank/util"
 
@@ -16,6 +17,8 @@ func main() {
     if err != nil {
         log.Fatal("cannot load config:", err)
     }
+
+    fmt.Printf("CONFIG", config.DBSource);
 
     conn, err := sql.Open(config.DBDriver, config.DBSource)
     if err != nil {
