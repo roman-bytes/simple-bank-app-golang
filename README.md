@@ -31,3 +31,5 @@ To get the Go Simple Bank App running locally:
 ```base
     make server
 ```
+
+API ENDPOINTS
