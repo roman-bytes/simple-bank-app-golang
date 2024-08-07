@@ -3,7 +3,6 @@ package main
 import (
     "database/sql"
     "log"
-    "fmt"
 
     "github.com/techschool/simplebank/util"
 
