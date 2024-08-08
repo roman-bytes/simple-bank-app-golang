@@ -32,5 +32,4 @@ To get the Go Simple Bank App running locally:
     make server
 ```
 
-API ENDPOINTS
-HELLO WORLD DEPLOY
+## API ENDPOINTS
