@@ -32,6 +32,9 @@ To get the Go Simple Bank App running locally:
     make server
 ```
 
+<<<<<<< Updated upstream
 ## API ENDPOINTS
 
+=======
+>>>>>>> Stashed changes
 Testing deploy
