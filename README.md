@@ -31,6 +31,13 @@ To get the Go Simple Bank App running locally:
     make server
     ```
 
+## Using Docker
+
+```bash
+docker compose up
+```
+
+
 ## API Endpoints
 
 ### User Endpoints
