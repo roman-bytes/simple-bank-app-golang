@@ -6,6 +6,7 @@ This project is a practice project to learn Go Lang and other backend tools. It 
 
 1. Go 1.16
 2. Docker
+3. migrate CLI (Install using `brew install golang-migrate/migrate`)
 
 ## Getting Started
 
@@ -24,13 +25,7 @@ To get the Go Simple Bank App running locally:
     make createdb
     ```
 
-4. Generate SQL queries
-
-    ```bash
-    make sqlc
-    ```
-
-5. Run the Go Simple Bank App server
+4. Run the Go Simple Bank App server
 
     ```bash
     make server
